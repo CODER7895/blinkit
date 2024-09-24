@@ -41,6 +41,4 @@ app.use('/categories', categoryRouter);
 app.use('/user', userRouter);
 app.use('/cart', cartRouter);
 
-app.listen(3000, () => {
-    console.log('server listening on port 3000 ');
-});
+app.listen(process.env.PORT || 3000);
